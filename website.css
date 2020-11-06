@@ -1,0 +1,112 @@
+:root {
+  box-sizing: border-box;
+}
+
+#,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  width: 100vw;
+  border-bottom: 1px solid grey;
+  background-color: white;
+  z-index: 99;
+}
+
+.logo {
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  top: 1px;
+  margin-right: 10px;
+  margin-left: 0px;
+}
+
+.about {
+  padding-left: 80px;
+}
+
+.nav-link {
+  padding-right: 1rem;
+}
+
+a {
+  color: rgb(92, 194, 228);
+}
+
+a:hover {
+  color: rgb(0, 119, 255);
+}
+
+main {
+  background-color: lightgrey;
+  width: 100vw;
+}
+/* #carousel {
+  border-top: 80px solid white;
+}
+
+#carousel .pic {
+  width: 100vw;
+  height: auto;
+}
+
+#carousel .carousel-caption {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.about .section-header {
+  padding-top: 10vw;
+  text-align: center;
+}
+
+.carousel-item {
+  display: none;
+} */
+
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  display: flex;
+  position: relative;
+  top: 70px;
+}
+
+.carousel-viewport {
+  position: absolute;
+  overflow-x: scroll;
+}
+
+.pic {
+  width: 100vw;
+  height: auto;
+  opacity: 75%;
+}
