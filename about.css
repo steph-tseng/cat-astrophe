@@ -1,0 +1,67 @@
+:root {
+  box-sizing: border-box;
+}
+
+#,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+/* ref colors
+  color: #ACC5E1;
+  color: #6381A8;
+
+*/
+
+body {
+  display: flex;
+  font-family: Georgia, 'Times New Roman', Times, serif
+  flex-direction: column;
+  background-color: #6381A8;
+  color: white;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  width: 100vw;
+  border-bottom: 1px solid grey;
+  background-color: white;
+  z-index: 99;
+}
+
+.logo {
+  position: absolute;
+  height: 75px;
+  width: 100px;
+  top: 2px;
+  margin-right: 10px;
+  margin-left: 0px;
+}
+
+nav h1 {
+  color: #6381a8;
+  font-family: chalkboard;
+  font-size: 40px;
+  padding-left: 100px;
+  margin-top: 18px;
+}
+
+.about {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.box {
+  height: 40vh;
+  width: 40vw;
+}

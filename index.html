@@ -4,53 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="website.css" />
-    <title>My Cat-astrophe</title>
+    <title>Oh Cat-astrophe</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header>
       <nav>
         <img
-          src="https://live.staticflickr.com/65535/50572885508_a7f07bcd0c_b.jpg"
+          src="https://live.staticflickr.com/65535/50575217446_b56328fb9c_b.jpg"
           alt="cat logo"
           class="logo"
         />
-        <a href="#about" class="nav-link about">Meet the Team</a>
-        <h1 class="company-name">A Cat-astophe</h1>
-        <a href="" class="nav-link">Adopt Don't Shop!</a>
+        <a href="about-page.html" class="nav-link about">Meet the Team</a>
+        <h1 class="company-name">Oh Cat-astophe</h1>
+        <a href="http://arcpets.com" class="nav-link" target="blank"
+          >Adopt Don't Shop!</a
+        >
       </nav>
     </header>
     <main>
       <section class="carousel" aria-label="gallery">
         <ol class="carousel-viewport">
           <li id="slide-1" tabindex="0" class="carousel-slide">
+            <img
+              src="https://i.pinimg.com/originals/55/82/58/5582586d8022820d59cc5b9aa0696d90.jpg"
+              alt="Judge-y Maine Coon"
+              class="pic"
+            />
             <div class="carousel-snapper">
-              <a href="#carousel-slide4" class="carousel-prev"></a>
-              <a href="#carousel-slide2" class="carousel-next"></a>
-              <img
-                src="https://i.pinimg.com/originals/55/82/58/5582586d8022820d59cc5b9aa0696d90.jpg"
-                alt="Maine Coon"
-                class="pic"
-              />
+              <a href="#carousel-slide3" class="carousel-prev">
+                <i class="fas fa-chevron-left"> </i>
+              </a>
+              <a href="#carousel-slide2" class="carousel-next">
+                <i class="fas fa-angle-right"> </i
+              ></a>
             </div>
           </li>
           <li id="slide-2" tabindex="0" class="carousel-slide">
             <div class="carousel-snapper">
               <a href="#carousel-slide1" class="carousel-prev"></a>
               <a href="#carousel-slide3" class="carousel-next"></a>
+              <img
+                src="https://live.staticflickr.com/65535/50574284803_90d61fa3c1_b.jpg"
+                alt="Sleeping White Maine Coon"
+                class="pic"
+              />
             </div>
           </li>
           <li id="slide-3" tabindex="0" class="carousel-slide">
             <div class="carousel-snapper">
               <a href="#carousel-slide2" class="carousel-prev"></a>
-              <a href="#carousel-slide4" class="carousel-next"></a>
+              <a href="#carousel-slide1" class="carousel-next"></a>
             </div>
           </li>
         </ol>
       </section>
       <br />
-      <div class="about" id="about">
-        <h2 class="section-header">Meet the Team</h2>
-      </div>
+      <div class="info"></div>
     </main>
     <footer></footer>
   </body>

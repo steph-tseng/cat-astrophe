@@ -8,6 +8,12 @@
   box-sizing: inherit;
 }
 
+/* ref colors
+  color: #ACC5E1;
+  color: #6381A8;
+
+*/
+
 body {
   display: flex;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -29,31 +35,45 @@ nav {
   border-bottom: 1px solid grey;
   background-color: white;
   z-index: 99;
+  font-size: 20px;
 }
 
 .logo {
   position: absolute;
   height: 75px;
-  width: 75px;
-  top: 1px;
+  width: 100px;
+  top: 2px;
   margin-right: 10px;
   margin-left: 0px;
 }
 
 .about {
-  padding-left: 80px;
+  padding-left: 100px;
+}
+
+nav h1 {
+  color: #6381a8;
+  font-family: chalkboard;
+  font-size: 40px;
 }
 
 .nav-link {
   padding-right: 1rem;
 }
 
-a {
-  color: rgb(92, 194, 228);
+a:link {
+  color: #acc5e1;
+  text-decoration: none;
 }
-
+a:visited {
+  color: #4e74a5;
+  text-decoration: none;
+}
 a:hover {
-  color: rgb(0, 119, 255);
+  color: #6381a8;
+}
+a:active {
+  color: #6581a5;
 }
 
 main {
@@ -95,18 +115,53 @@ li {
 }
 
 .carousel {
-  display: flex;
   position: relative;
+  align-items: flex-start;
   top: 70px;
+  left: 0;
 }
 
 .carousel-viewport {
   position: absolute;
-  overflow-x: scroll;
+  display: flex;
+  flex: 1;
+  overflow-x: hidden;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling property;
+}
+
+.carousel-slide {
+  position: relative;
+  /* flex: 0 0 100%; */
+  width: 100vw;
 }
 
 .pic {
   width: 100vw;
   height: auto;
   opacity: 75%;
+}
+
+.carousel-snapper {
+  position: absolute;
+  scroll-snap-align: start;
+  z-index: 2;
+  top: 50vh;
+  color: white;
+}
+
+.carousel-snapper a:link {
+  color: white;
+}
+
+.carousel-prev {
+  
+}
+
+.carousel-next {
+  justify-self: flex-end;
+}
+
+#slide-2 {
+  display: none;
 }
