@@ -18,6 +18,8 @@ body {
   display: flex;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   flex-direction: column;
+  justify-content: space-between;
+  position: relative;
 }
 
 nav {
@@ -30,7 +32,7 @@ nav {
   left: 0;
   margin: 0;
   padding: 0;
-  height: 80px;
+  height: 10vh;
   width: 100vw;
   border-bottom: 1px solid grey;
   background-color: white;
@@ -79,6 +81,7 @@ a:active {
 main {
   background-color: lightgrey;
   width: 100vw;
+
 }
 /* #carousel {
   border-top: 80px solid white;
@@ -120,6 +123,7 @@ li {
   align-items: flex-start;
   top: 70px;
   left: 0;
+  padding-bottom: 10px;
 }
 
 .carousel-viewport {
@@ -134,13 +138,17 @@ li {
 .carousel-slide {
   position: relative;
   /* flex: 0 0 100%; */
+  height: 100vh;
   width: 100vw;
+  /* object-fit: cover; */
 }
 
 .pic {
   width: 100vw;
-  height: auto;
+  height: 100vh;
+  object-fit: cover;
   opacity: 75%;
+  padding-bottom: 10px;
 }
 
 .carousel-snapper {
@@ -148,7 +156,7 @@ li {
   position: absolute;
   scroll-snap-align: start;
   z-index: 2;
-  top: 108vh;
+  top: 90vh;
 }
 
 .fas {
@@ -166,4 +174,51 @@ li {
   left: 2vw;
   color: white;
   font-size: 3rem;
+}
+
+.box {
+  background-color: #ACC5E1;
+  padding-top: 108vh;
+  padding-left: 1vw;
+  height: 100vh;
+  width: 99vw;
+  color: #4e74a5;
+}
+
+.section-head {
+  border-bottom: 5px solid white;
+}
+
+.info ol {
+  counter-reset: my-awesome-counter;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+}
+
+.info ol li {
+  counter-increment: my-awesome-counter;
+}
+
+.info ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: #4e74a5;
+}
+
+.info p {
+  color: white;
+  padding-left: 2vw;
+  margin-top: 0.2em;
+}
+
+
+footer {
+  position: absolute;
+  height: 10vh;
+  width: 100vw;
+  background-color: #6381A8;
+  text-align: center;
+  color: white;
+  z-index: 3;
+  top: 200vh;
+  padding-top: 2vh;
 }

@@ -48,7 +48,7 @@ nav {
 nav h1 {
   color: #6381a8;
   font-family: chalkboard;
-  font-size: 40px;
+  font-size: 3rem;
   padding-left: 100px;
   margin-top: 18px;
 }
@@ -65,7 +65,7 @@ nav h1 {
   padding-top: 0;
   padding-left: 0;
   height: 49vh;
-  width: 49vw;
+  width: 48vw;
   border-right: 1px solid #ACC5E1 ;
   border-bottom: 1px solid #ACC5E1 ;
 }
