@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../Documents/Coderschool"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "cat-astrophe",
+    "liveServer.settings.port": 5501
+  }
+}

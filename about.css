@@ -54,14 +54,28 @@ nav h1 {
 }
 
 .about {
-  margin-top: 80px;
+  margin-top: 70px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   text-align: center;
+  align-content: space-between;
 }
 
 .box {
-  height: 40vh;
-  width: 40vw;
+  padding-top: 0;
+  padding-left: 0;
+  height: 49vh;
+  width: 49vw;
+  border-right: 1px solid #ACC5E1 ;
+  border-bottom: 1px solid #ACC5E1 ;
+}
+
+.fas {
+  padding-top: 10vh;
+  margin-bottom: 1vh;
+  font-size: 5rem;
+}
+
+p {
+  color: #ACC5E1;
 }
