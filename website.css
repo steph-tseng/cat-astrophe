@@ -143,27 +143,27 @@ li {
   opacity: 75%;
 }
 
-/* .carousel-snapper {
+.carousel-snapper {
+  display: flex;
   position: absolute;
   scroll-snap-align: start;
   z-index: 2;
-  top: 50vh;
-  
+  top: 108vh;
 }
 
-.carousel-snapper a:link {
-  color: white;
+.fas {
+  font-size: 4rem;
 }
 
-.carousel-prev {
-  
-}
-
-.carousel-next {
-  
-} */
-
-#slide-2 {
+#slide-2, #slide-3 {
   display: none;
   object-fit: cover;
+}
+
+.carousel h2 {
+  position: absolute;
+  top: 0px;
+  left: 2vw;
+  color: white;
+  font-size: 3rem;
 }
